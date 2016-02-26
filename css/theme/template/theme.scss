@@ -28,6 +28,19 @@ body {
 	font-weight: inherit;
 }
 
+.reveal .left-column{
+  float: left;
+  padding:5px;
+  width:45%;
+  text-align: left;
+}
+
+.reveal .right-column{
+  float: right;
+  padding:5px;
+  width:45%;
+  text-align: left;
+}
 /*********************************************
  * HEADERS
  *********************************************/
@@ -170,6 +183,9 @@ body {
 }
 .reveal code {
 	font-family: monospace;
+  background: $codeBackground;
+  color: $codeColor;
+	padding: 5px;
 }
 
 .reveal pre code {
