@@ -359,6 +359,7 @@ Lexer.prototype.token = function(src, top, bq) {
       continue;
     }
 
+	 // html_closed
    if (cap =  this.rules.html_closed.exec(src)) {
       var atts = cap[2].substring(0,cap[2].indexOf(">"));
       if (/markdown\s*=\s*('|")?[\s\S]*\1/.test(atts)) {
